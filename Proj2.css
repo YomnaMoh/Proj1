@@ -1,0 +1,10 @@
+@font-face {
+    font-family: CarinaPro;
+    src: url(fonts/Carinapro.ttf);
+  }
+
+  .h1 {
+    font-family: "CarinaPro";
+    font-size: 30px;
+    color: burlywood;
+  }

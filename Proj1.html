@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> on beginnings </title>
+
+
+<link rel="Stylesheet" href="Proj1.css">
+<style>
+
+.dragablecircle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+body{
+    background-color: #000000;
+
+  }
+
+  .dragablecircle{
+    border-color: #A19C8B;
+    border-style: groove;
+  }
+
+
+
+</style>
+</head>
+<body onload="move('dragablecircle')">
+
+</body>
+</html> 
+
+<a href="Proj1.Page2.html">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;On Beginnings</h1>
+ <h2> On Beginnings</h2>
+ <h3>&nbsp;&nbsp;&nbsp;&nbsp;On Beginnings</h3>
+</a>
+
+
+
+  
+<div class="dragablecircle" id="dragablecircle"></div>
+
+<script>
+
+  var dragValue;
+
+  function move(id){
+    
+    var element = document.getElementById("dragablecircle");
+    element.style.position = "absolute";
+    element.onmousedown = function(){
+      dragValue = element;
+  }
+}
+
+    document.onmousemove = function(e){
+      var x = e.pageX;
+      var y = e.pageY;
+
+      dragValue.style.left = x + "px";
+      dragValue.style.top = y + "px";
+}
+
+
+
+</script>
+
+
+
+   
+
+
+ 
+
+
+
+
+  </body>
+</html>
